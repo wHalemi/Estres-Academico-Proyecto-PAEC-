@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrés Académico - Contacto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="img/logocbta.jpeg" alt="Logo oficial" class="logo">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="btn-menu">☰</label>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="informacion.html">Información</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+    </div>
+</header>
+    <main class="container contacto-layout">
+        
+   
+        <section class="contacto-info">
+            <h2>¿Necesitas orientación?</h2>
+            <p>Si sientes que las exigencias escolares están afectando tu salud emocional o rendimiento, no dudes en escribirnos.</p>
+            <p>Nuestro equipo de orientación responderá a tu mensaje de forma totalmente confidencial y segura.</p>
+        </section>
+        <section class="contacto-form-container">
+            <form action="#" method="POST" class="formulario-tarjeta"> 
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="12" max="99" placeholder="Tu edad">
+                </div>   
+                <div class="form-group-options">
+                    <p class="label-mock">¿Qué te interesa?</p>
+                    <div class="options-inline">
+                        <label><input type="checkbox" name="interes" value="talleres"> Talleres</label>
+                        <label><input type="checkbox" name="interes" value="asesoria"> Asesorías</label>
+                        <label><input type="checkbox" name="interes" value="material"> Materiales</label>
+                    </div>
+                </div>
+                <div class="form-group-options">
+                    <p class="label-mock">Turno:</p>
+                    <div class="options-inline">
+                        <label><input type="radio" name="turno" value="matutino" checked> Matutino</label>
+                        <label><input type="radio" name="turno" value="vespertino"> Vespertino</label>
+                        <label><input type="radio" name="turno" value="mixto"> Mixto</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Comentarios:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p> 2026 Sitio Web de Concientización sobre el Estrés Académico.</p>
+            <p>Creado por: <strong>Tally Code</strong> | Fuentes: Departamento de Orientación Educativa.</p>
+        </div>
+    </footer>
+</body>
+</html>

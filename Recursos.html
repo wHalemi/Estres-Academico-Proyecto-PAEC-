@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrés Académico - Recursos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="img/logocbta.jpeg" alt="Logo oficial" class="logo">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="btn-menu">☰</label>    
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="informacion.html">Información</a>
+            <a href="recursos.html" class="active">Recursos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+</header>
+    <main class="container flex-layout">
+        <article class="double-scale">
+            <h1>Recursos para Manejar el Estrés</h1>
+            <p style="margin-bottom: 25px;">Aquí encontrarás las herramientas y metodologías más eficientes recomendadas por especialistas para controlar la presión escolar y mejorar tu enfoque diario.</p> 
+            <div class="grid" style="grid-template-columns: 1fr; gap: 15px;">
+                <div class="card bg-pilar-2">
+                    <h4>⏱ El Método Pomodoro</h4>
+                    <p>Divide tu tiempo de estudio en bloques de 25 minutos de concentración intensa seguidos de 5 minutos de descanso absoluto. Cada cuatro bloques, toma un descanso largo de 20 minutos para refrescar tu mente.</p>
+                </div>
+
+                <div class="card bg-pilar-3">
+                    <h4> Matriz de Eisenhower</h4>
+                    <p>Clasifica tus deberes escolares en cuatro cuadrantes: Urgente e Importante, Importante pero No Urgente, Urgente pero No Importante, y Ni Urgente ni Importante. Aprende a priorizar y delegar.</p>
+                </div>
+
+                <div class="card bg-pilar-4">
+                    <h4> Técnicas de Respiración 4-7-8</h4>
+                    <p>Inhala aire por la nariz durante 4 segundos, retén la respiración durante 7 segundos y exhala completamente por la boca a lo largo de 8 segundos. Repite este ciclo cuatro veces en momentos de alta ansiedad.</p>
+                </div>
+            </div>
+        </article>
+
+        <aside class="side-column">
+            <div class="card">
+                <h3> Test de Autoevaluación</h3>
+                <p style="margin-bottom: 15px; font-size: 13px;">Responde honestamente para identificar tus niveles de carga académica actual.</p>
+                
+                <form action="#" method="POST">
+                    
+                    <div class="form-group">
+                        <p class="label-mock">1. ¿Con qué frecuencia postergas tareas?</p>
+                        <div class="form-group" style="margin-bottom: 5px;">
+                            <label><input type="radio" name="trivia1" value="siempre" checked> Siempre (Alto riesgo)</label>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 5px;">
+                            <label><input type="radio" name="trivia1" value="algunas"> A veces (Moderado)</label>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 5px;">
+                            <label><input type="radio" name="trivia1" value="nunca"> Casi nunca (Bajo)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha-test">Fecha de aplicación:</label>
+                        <input type="date" id="fecha-test" name="fecha_test" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horas-sueno">Horas de sueño promedio:</label>
+                        <input type="number" id="horas-sueno" name="horas_sueno" min="1" max="24" placeholder="Ej. 6" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nivel-ansiedad">Nivel percibido:</label>
+                        <select id="nivel-ansiedad" name="nivel_ansiedad" required>
+                            <option value="" disabled selected>-- Elige una opción --</option>
+                            <option value="bajo">Leve / Controlable</option>
+                            <option value="medio">Moderado / Estresado</option>
+                            <option value="alto">Grave / Saturado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="label-mock">Síntomas físicos presentados:</p>
+                        <div class="options-inline" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                            <label><input type="checkbox" name="sintoma" value="insomnio"> Insomnio / Cansancio</label>
+                            <label><input type="checkbox" name="sintoma" value="jaqueca"> Dolores de cabeza</label>
+                            <label><input type="checkbox" name="sintoma" value="irritable"> Irritabilidad constante</label>
+                        </div>
+                    </div>
+
+                    <div style="text-align: right; margin-top: 15px;">
+                        <button type="submit" class="btn">Evaluar Nivel</button>
+                    </div>
+
+                </form>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sitio Web de Concientización sobre el Estrés Académico.</p>
+            <p>Creado por: <strong>Tally Code</strong> | Fuentes: Guías de Psicología Estudiantil CBTA.</p>
+        </div>
+    </footer>
+</body>
+</html>
